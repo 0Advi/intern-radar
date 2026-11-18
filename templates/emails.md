@@ -17,7 +17,7 @@ Hi {first name},
 I saw the {role} opening at {Company} ({where}). {One specific, true line about why this team — product,
 launch, blog post, stack}.
 
-I'm a final-year CS student at Manipal Institute of Technology, Bengaluru (CGPA 8.38, graduating July 2027).
+I'm a final-year CS student at Manipal Institute of Technology, Bengaluru (graduating July 2027).
 Two things that map to this role:
 - {Selling point 1, tied to their work}
 - {Selling point 2, tied to their work}
