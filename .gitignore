@@ -1,0 +1,24 @@
+# Secrets
+.env
+*.key
+
+# Personal data: contacts, sent emails, applications, research (never commit)
+data/
+tracker.csv
+drafts/
+dashboard/index.html
+profile.md
+resume/base.json
+
+# Resumes and any other PDFs
+*.pdf
+Aditya_Kumar_Singh_Resume*.pdf
+resume/*.pdf
+
+# Build output and local clutter
+widget/InternRadar.app/
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp
+.claude/

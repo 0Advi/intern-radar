@@ -1,0 +1,52 @@
+{
+ "_comment": "Tier-1 providers, tried in this order. Model ids change: run `python3 tools/llm.py --models <provider>` after adding a key and pin a real id here. Only PUBLIC text (job postings, company web pages) may go to these providers.",
+ "providers": [
+  {
+   "name": "deepseek",
+   "base_url": "https://api.deepseek.com/v1",
+   "model": "deepseek-flash",
+   "json_mode": true,
+   "rpm": 60,
+   "daily_requests": 2000,
+   "notes": "Paid, very cheap. Hosted in China: public text only."
+  },
+  {
+   "name": "openai",
+   "base_url": "https://api.openai.com/v1",
+   "model": "gpt-4o-mini",
+   "json_mode": true,
+   "rpm": 60,
+   "daily_requests": 1000,
+   "notes": "Paid fallback. Public text only."
+  },
+  {
+   "name": "gemini",
+   "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+   "model": "gemini-flash-latest",
+   "json_mode": true,
+   "rpm": 15,
+   "daily_requests": 1000,
+   "notes": "Free tier may be used for training: public text only."
+  },
+  {
+   "name": "cerebras",
+   "base_url": "https://api.cerebras.ai/v1",
+   "model": "gpt-oss-120b",
+   "json_mode": true,
+   "rpm": 5,
+   "daily_requests": 300,
+   "notes": "Free trial, ~1M tokens/day."
+  },
+  {
+   "name": "openrouter",
+   "base_url": "https://openrouter.ai/api/v1",
+   "model": "deepseek/deepseek-chat:free",
+   "json_mode": false,
+   "rpm": 15,
+   "daily_requests": 45,
+   "notes": "Free models: 50 requests/day (1,000 after a one-time $10 top-up)."
+  }
+ ],
+ "max_input_chars": 24000,
+ "timeout_s": 60
+}
